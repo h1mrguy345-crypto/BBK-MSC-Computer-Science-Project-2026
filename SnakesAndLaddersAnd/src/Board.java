@@ -7,4 +7,11 @@ public class Board {
         this.boardSize = boardSize;
         this.spot = new Spot[boardSize + 1]; // increases the number of spots accordgingly to the board
     }
+
+    //sets/initialises the board
+    private void setBoard(){
+        for (int i = 1; i <= boardSize; i++){
+            spot[i] = new Spot(i);
+        }
+    }
 }

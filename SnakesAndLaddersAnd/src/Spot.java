@@ -7,4 +7,5 @@ public class Spot {
         this.move = 0;
     }
 
+
 }
