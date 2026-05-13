@@ -1,6 +1,6 @@
 public class Board {
     private int boardSize;
-    private Spot[] spot; // Spot class is to be made
+    private Spot[] spot; // (13/05/2026) Spot class is to be made
 
     //constructor for the board
     public Board (int boardSize){
