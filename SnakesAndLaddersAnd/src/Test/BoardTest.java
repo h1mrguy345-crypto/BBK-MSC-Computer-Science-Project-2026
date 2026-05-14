@@ -26,7 +26,8 @@ public class BoardTest {
     @Test
     public void confirmPlayerPosition(){
         Board testBoard = new Board(15);
-        assertEquals(1, testBoard.getSpot()[1].getPlayerPosition());
-        System.out.println("position of player is tracked");
+        assertEquals(1, testBoard.getSpot()[1].getPlayerPosition()); //tracking one player
+        assertEquals(12, testBoard.getSpot()[12].getPlayerPosition()); //tracking another player
+        System.out.println("position of both players are tracked");
     }
 }
