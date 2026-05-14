@@ -19,4 +19,8 @@ public class Board {
     public int getBoardSize(){
         return boardSize;
     }
+
+    public Spot[] getSpot(){
+        return spot;
+    }
 }
