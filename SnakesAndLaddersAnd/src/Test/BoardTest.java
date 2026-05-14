@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
@@ -20,5 +21,12 @@ public class BoardTest {
         assertNotNull(testBoard.getSpot()[1]);
         assertNotNull(testBoard.getSpot()[15]);
         System.out.println("there are spots on the board");
+    }
+
+    @Test
+    public void confirmPlayerPosition(){
+        Board testBoard = new Board(15);
+        assertEquals(1, testBoard.getSpot()[1].getPlayerPosition());
+        System.out.println("position of player is tracked");
     }
 }
