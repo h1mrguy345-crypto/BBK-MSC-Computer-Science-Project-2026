@@ -23,6 +23,7 @@ public class BoardTest {
         System.out.println("there are spots on the board");
     }
 
+    //to confirm positions are tracked
     @Test
     public void confirmPlayerPosition(){
         Board testBoard = new Board(15);

@@ -16,6 +16,12 @@ public class Board {
         }
     }
 
+    public void printBoard(){
+        for (int i = 1; 1 <= boardSize; i++){
+            System.out.print("[]");
+        }
+    }
+
     public int getBoardSize(){
         return boardSize;
     }
