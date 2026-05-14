@@ -7,5 +7,7 @@ public class Spot {
         this.move = 0;
     }
 
-
+    public int getPlayerPosition() {
+        return playerPosition;
+    }
 }
