@@ -18,6 +18,7 @@ public class Board {
 
     //prints the board out (check main). however currently prints and endless amount of spaces
     public void printBoard(){
+        System.out.println("size = " + boardSize);
         for (int i = 1; 1 <= boardSize; i++){
             System.out.print("[]");
             if(i % 10 == 0){ //splits the board into rows rather than make one endless stream
