@@ -16,11 +16,14 @@ public class Board {
         }
     }
 
-    //prints the board out (check main). however currently prints and endless amount of spaces
+    //prints the board out (check main).
     public void printBoard(){
         System.out.println("size = " + boardSize);
         for (int i = 1; 1 <= boardSize; i++){
             System.out.print("[]");
+            if (i == 100){ //maximum spots. prevents endless board
+            break;
+            }
             if(i % 10 == 0){ //splits the board into rows rather than make one endless stream
                 System.out.println();
             }
