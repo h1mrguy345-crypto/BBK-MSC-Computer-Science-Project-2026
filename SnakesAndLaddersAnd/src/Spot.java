@@ -10,4 +10,11 @@ public class Spot {
     public int getPlayerPosition() {
         return playerPosition;
     }
+    
+    public void setMove(int move){
+        this.move = move;
+    }
+    public int getMove(int move){
+        return move;
+    }
 }
