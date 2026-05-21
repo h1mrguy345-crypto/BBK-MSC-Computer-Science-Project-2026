@@ -10,7 +10,15 @@ public class Spot {
     public int getPlayerPosition() {
         return playerPosition;
     }
-    
+
+    /**
+     * if a player moves,
+     * they can't go beyond the board.
+     * there is a max set but -1 just means they don't go backwards off the board.
+     * */
+    public boolean playerAdvancesTo(){
+        return move != -1;
+    }
     public void setMove(int move){
         this.move = move;
     }
