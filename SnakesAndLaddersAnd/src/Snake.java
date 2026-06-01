@@ -18,4 +18,11 @@ public class Snake {
             System.out.println(snakeError.getMessage());
         }
     }
+    public int getSnakeTop(){
+        return snakeTop;
+    }
+
+    public int getSnakeBottom() {
+        return snakeBottom;
+    }
 }
