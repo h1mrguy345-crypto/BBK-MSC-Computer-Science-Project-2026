@@ -15,8 +15,8 @@ public class Ladder {
 
             this.ladderBottom = ladderBottom;
             this.ladderTop = ladderTop;
-        } catch (IllegalArgumentException snakeError){
-            System.out.println(snakeError.getMessage());
+        } catch (IllegalArgumentException ladderError){
+            System.out.println(ladderError.getMessage());
         }
     }
     public int getLadderTop(){
