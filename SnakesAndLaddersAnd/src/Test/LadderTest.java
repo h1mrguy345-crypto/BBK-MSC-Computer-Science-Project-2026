@@ -6,7 +6,7 @@ public class LadderTest {
     //ladder should not make a player go downwards, aka not act like a snake
     @Test
     void ladderBehaviourNotSnakeBehaviour(){
-        assertThrows(IllegalArgumentException.ladderError,
+        assertThrows(IllegalArgumentException.class,
                 ()-> new Ladder(50,15));
     }
 }
