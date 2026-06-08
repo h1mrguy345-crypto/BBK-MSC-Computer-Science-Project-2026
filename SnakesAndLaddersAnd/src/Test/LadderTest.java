@@ -7,6 +7,6 @@ public class LadderTest {
     @Test
     void ladderBehaviourNotSnakeBehaviour(){
         assertThrows(IllegalArgumentException.class,
-                ()-> new Ladder(50,15));
+                ()-> new Ladder(15,50));
     }
 }
