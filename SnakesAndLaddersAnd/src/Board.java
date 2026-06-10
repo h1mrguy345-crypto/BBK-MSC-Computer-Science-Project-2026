@@ -37,4 +37,9 @@ public class Board {
     public Spot[] getSpot(){
         return spot;
     }
+
+    public void printSnakeonBoard(Snake snake){
+        spot[snake.getSnakeTop()].setSnake(snake); // <-expects no arguments but finds one?
+    }
+
 }
