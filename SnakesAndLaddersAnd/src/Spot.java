@@ -33,6 +33,7 @@ public class Spot {
     public Ladder getLadder(){
         return ladder;
     }
+
     public void setSnake(){
         this.snake = snake;
     }
