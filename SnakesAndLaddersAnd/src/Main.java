@@ -17,6 +17,8 @@ public class Main{
             System.out.println("to exit the instructions, hit enter (you will be sent to the next page)");
         }
         Board mainBoard = new Board(10);
+        //mainBoard.printLadderonBoard();
+        //mainBoard.printSnakeonBoard();
         mainBoard.printBoard();
     }
 }
