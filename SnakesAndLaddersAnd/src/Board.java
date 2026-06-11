@@ -39,7 +39,10 @@ public class Board {
     }
 
     public void printSnakeonBoard(){
-        spot[Snake.getSnakeTop()].setSnake(); // <-expects no arguments but finds one?
+        spot[Snake.getSnakeTop()].setSnake();
+    }
+    public void printLadderonBoard(){
+        spot[Ladder.getLadderTop()].setLadder();
     }
 
 }

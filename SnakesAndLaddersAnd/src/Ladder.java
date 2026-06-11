@@ -1,5 +1,5 @@
 public class Ladder {
-    private int ladderTop;
+    private static int ladderTop;
     private int ladderBottom;
 
     /**
@@ -16,9 +16,9 @@ public class Ladder {
             this.ladderTop = ladderTop;
 
     }
-    public int getLadderTop(){
+    public static int getLadderTop(){
         return ladderTop;
-    }
+    } //11/06/2026: made static
 
     public int getLadderBottom() {
         return ladderBottom;
