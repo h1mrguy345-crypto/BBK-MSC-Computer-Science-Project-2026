@@ -38,8 +38,8 @@ public class Board {
         return spot;
     }
 
-    public void printSnakeonBoard(Snake boardSnake){
-        spot[boardSnake.getSnakeTop()].setSnake(boardSnake); // <-expects no arguments but finds one?
+    public void printSnakeonBoard(){
+        spot[Snake.getSnakeTop()].setSnake(); // <-expects no arguments but finds one?
     }
 
 }

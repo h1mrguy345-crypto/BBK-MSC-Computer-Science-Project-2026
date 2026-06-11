@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Snake {
-    private int snakeTop;
+    private static int snakeTop;
     private int snakeBottom;
 
     /**
@@ -18,9 +18,9 @@ public class Snake {
             this.snakeBottom = snakeBottom;
             this.snakeTop = snakeTop;
     }
-    public int getSnakeTop(){
+    public static int getSnakeTop(){
         return snakeTop;
-    }
+    } //11/06/2026: made static
 
     public int getSnakeBottom() {
         return snakeBottom;
