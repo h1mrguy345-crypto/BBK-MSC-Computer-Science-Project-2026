@@ -16,24 +16,32 @@ public class Board {
         }
     }
 
-    //12/06/2026: boardladder only recognises getladderbottom, not getladdertop
-    public void printLadderonBoard(Ladder boardLadder){
-        spot[boardLadder.].setLadder();
+    //12/06/2026: boardladder only recognises getladderbottom, not getladdertop. Ladder recognises it however
+    public void printLadderonBoard(){
+        spot[Ladder.getLadderTop()].setLadder();
+    }
+    public void printSnakeonBoard(){
+        spot[Snake.getSnakeTop()].setSnake();
     }
 
     //prints the board out (check main).
     // might be worth looking into: https://stackoverflow.com/questions/77395613/function-for-snakes-and-ladders-printing-additional-output-that-is-not-needed
     public void printBoard(){
-        System.out.println("size = " + boardSize);
-        for (int i = 1; 1 <= boardSize; i++){
-            System.out.print("[]"); //prints normal spot on board
-            if (i == 100){ //maximum spots. prevents endless board
-            break;
+        for (int i = 1; i <= boardSize; i++){
+            if (spot[i].getLadder() != null){
+                System.out.println("[L]");
             }
-            if(i % 10 == 0){ //splits the board into rows rather than make one endless stream
+            if (spot[i].getSnake() != null){
+                System.out.println("[S]");
+            }
+            else {
+                System.out.println("[ ]");
+            }
+            if (i % 10 == 0){
                 System.out.println();
             }
         }
+        System.out.println();
     }
 
     public int getBoardSize(){
@@ -44,9 +52,7 @@ public class Board {
         return spot;
     }
 
-    public void printSnakeonBoard(){
-        spot[Snake.getSnakeTop()].setSnake();
-    }
+
 
 
 }
