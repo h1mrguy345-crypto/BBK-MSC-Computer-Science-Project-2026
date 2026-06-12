@@ -16,20 +16,17 @@ public class Board {
         }
     }
 
+    //12/06/2026: boardladder only recognises getladderbottom, not getladdertop
+    public void printLadderonBoard(Ladder boardLadder){
+        spot[boardLadder.].setLadder();
+    }
+
     //prints the board out (check main).
     // might be worth looking into: https://stackoverflow.com/questions/77395613/function-for-snakes-and-ladders-printing-additional-output-that-is-not-needed
     public void printBoard(){
         System.out.println("size = " + boardSize);
         for (int i = 1; 1 <= boardSize; i++){
-            /*if(spot[i].getSnake() != null){
-                System.out.println("[S]"); //prints snake onto board
-            }
-            else if (spot[i].getLadder() != null){
-                System.out.println("[L]"); //prints ladder onto board
-            }
-            else {*/
             System.out.print("[]"); //prints normal spot on board
-            //}
             if (i == 100){ //maximum spots. prevents endless board
             break;
             }
@@ -50,8 +47,6 @@ public class Board {
     public void printSnakeonBoard(){
         spot[Snake.getSnakeTop()].setSnake();
     }
-    public void printLadderonBoard(){
-        spot[Ladder.getLadderTop()].setLadder();
-    }
+
 
 }
