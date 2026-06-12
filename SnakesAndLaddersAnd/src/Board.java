@@ -20,15 +20,15 @@ public class Board {
     public void printBoard(){
         System.out.println("size = " + boardSize);
         for (int i = 1; 1 <= boardSize; i++){
-            if(spot[i].getSnake() != null){
+            /*if(spot[i].getSnake() != null){
                 System.out.println("[S]"); //prints snake onto board
             }
             else if (spot[i].getLadder() != null){
                 System.out.println("[L]"); //prints ladder onto board
             }
-            else {
+            else {*/
             System.out.print("[]"); //prints normal spot on board
-            }
+            //}
             if (i == 100){ //maximum spots. prevents endless board
             break;
             }
