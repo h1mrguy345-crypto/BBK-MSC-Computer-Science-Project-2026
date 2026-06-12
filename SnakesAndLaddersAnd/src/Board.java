@@ -17,6 +17,7 @@ public class Board {
     }
 
     //prints the board out (check main).
+    // might be worth looking into: https://stackoverflow.com/questions/77395613/function-for-snakes-and-ladders-printing-additional-output-that-is-not-needed
     public void printBoard(){
         System.out.println("size = " + boardSize);
         for (int i = 1; 1 <= boardSize; i++){
