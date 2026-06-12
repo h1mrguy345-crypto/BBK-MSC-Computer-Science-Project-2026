@@ -27,6 +27,8 @@ public class Spot {
     public int getMove(int move){
         return move;
     }
+
+    //Ladder
     public void setLadder(){
         this.ladder = ladder;
     }
@@ -34,6 +36,7 @@ public class Spot {
         return ladder;
     }
 
+    //Snake
     public void setSnake(){
         this.snake = snake;
     }
