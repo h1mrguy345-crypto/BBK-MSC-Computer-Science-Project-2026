@@ -11,15 +11,15 @@ public class Ladder {
             if (ladderBottom <= ladderTop) {
                 throw new IllegalArgumentException("You cannot to advance dowmwards with a ladder");
             }
-
             this.ladderBottom = ladderBottom;
             this.ladderTop = ladderTop;
-
     }
+
+    //Getters
+    //11/06/2026: both made static
     public static int getLadderTop(){
         return ladderTop;
-    } //11/06/2026: made static
-
+    }
     public int getLadderBottom() {
         return ladderBottom;
     }
