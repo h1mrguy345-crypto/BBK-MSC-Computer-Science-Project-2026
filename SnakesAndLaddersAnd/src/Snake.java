@@ -18,10 +18,12 @@ public class Snake {
             this.snakeBottom = snakeBottom;
             this.snakeTop = snakeTop;
     }
+
+    //getters
+    //11/06/2026: both made static
     public static int getSnakeTop(){
         return snakeTop;
-    } //11/06/2026: made static
-
+    }
     public int getSnakeBottom() {
         return snakeBottom;
     }
