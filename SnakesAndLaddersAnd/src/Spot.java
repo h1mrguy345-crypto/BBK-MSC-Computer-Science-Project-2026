@@ -29,16 +29,16 @@ public class Spot {
     }
 
     //Ladder
-    public void setLadder(){
-        this.ladder = ladder;
+    public void setLadder(Ladder ladder){
+        this.ladder = this.ladder;
     }
     public Ladder getLadder(){
         return ladder;
     }
 
     //Snake
-    public void setSnake(){
-        this.snake = snake;
+    public void setSnake(Snake snake){
+        this.snake = this.snake;
     }
     public Snake getSnake(){
         return snake;

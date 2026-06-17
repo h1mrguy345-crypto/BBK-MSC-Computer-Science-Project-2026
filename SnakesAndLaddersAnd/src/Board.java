@@ -17,11 +17,11 @@ public class Board {
     }
 
     //12/06/2026: boardladder only recognises getladderbottom, not getladdertop. Ladder recognises it however
-    public void printLadderonBoard(){
-        spot[Ladder.getLadderTop()].setLadder();
+    public void printLadderonBoard(Ladder ladder){
+        spot[Ladder.getLadderTop()].setLadder(ladder);
     }
-    public void printSnakeonBoard(){
-        spot[Snake.getSnakeTop()].setSnake();
+    public void printSnakeonBoard(Snake snake){
+        spot[Snake.getSnakeTop()].setSnake(snake);
     }
 
     //prints the board out (check main).

@@ -18,8 +18,8 @@ public class Main{
         }
         Board mainBoard = new Board(100);
         //17/06/26 both ladder and snake are null, to be uncommented once snakes and ladders are printed onto board
-        //mainBoard.printLadderonBoard();
-        //mainBoard.printSnakeonBoard();
+        mainBoard.printLadderonBoard(new Ladder(8,5));
+        mainBoard.printSnakeonBoard(new Snake(20,28));
         mainBoard.printBoard();
     }
 }
