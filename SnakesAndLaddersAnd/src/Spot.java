@@ -30,7 +30,7 @@ public class Spot {
 
     //Ladder
     public void setLadder(Ladder ladder){
-        this.ladder = this.ladder;
+        this.ladder = ladder;
     }
     public Ladder getLadder(){
         return ladder;
@@ -38,7 +38,7 @@ public class Spot {
 
     //Snake
     public void setSnake(Snake snake){
-        this.snake = this.snake;
+        this.snake = snake;
     }
     public Snake getSnake(){
         return snake;
