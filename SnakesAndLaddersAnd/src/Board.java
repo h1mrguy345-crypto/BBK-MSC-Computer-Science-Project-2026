@@ -35,7 +35,7 @@ public class Board {
                 System.out.println("[S]");
             }
             else {
-                System.out.println("[ ]");
+                System.out.print("[ ]");
             }
             if (i % 10 == 0){
                 System.out.println();

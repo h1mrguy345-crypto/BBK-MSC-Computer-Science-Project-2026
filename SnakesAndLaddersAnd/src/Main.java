@@ -17,6 +17,7 @@ public class Main{
             System.out.println("to exit the instructions, hit enter (you will be sent to the next page)");
         }
         Board mainBoard = new Board(10);
+        //17/06/26 both ladder and snake are null, to be uncommented once snakes and ladders are printed onto board
         //mainBoard.printLadderonBoard();
         //mainBoard.printSnakeonBoard();
         mainBoard.printBoard();
