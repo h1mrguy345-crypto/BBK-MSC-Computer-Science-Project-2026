@@ -16,7 +16,7 @@ public class Main{
             System.out.println("the winner is the first one who reaches the top tile");
             System.out.println("to exit the instructions, hit enter (you will be sent to the next page)");
         }
-        Board mainBoard = new Board(10);
+        Board mainBoard = new Board(100);
         //17/06/26 both ladder and snake are null, to be uncommented once snakes and ladders are printed onto board
         //mainBoard.printLadderonBoard();
         //mainBoard.printSnakeonBoard();

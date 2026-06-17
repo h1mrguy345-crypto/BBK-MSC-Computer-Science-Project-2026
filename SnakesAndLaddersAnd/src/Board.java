@@ -29,10 +29,10 @@ public class Board {
     public void printBoard(){
         for (int i = 1; i <= boardSize; i++){
             if (spot[i].getLadder() != null){
-                System.out.println("[L]");
+                System.out.print("[L]");
             }
             if (spot[i].getSnake() != null){
-                System.out.println("[S]");
+                System.out.print("[S]");
             }
             else {
                 System.out.print("[ ]");
