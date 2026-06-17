@@ -1,6 +1,6 @@
 public class Ladder {
     private static int ladderTop;
-    private int ladderBottom;
+    private static int ladderBottom;
 
     /**
      * constructor.
@@ -20,7 +20,7 @@ public class Ladder {
     public static int getLadderTop(){
         return ladderTop;
     }
-    public int getLadderBottom() {
+    public static int getLadderBottom() {
         return ladderBottom;
     }
 }

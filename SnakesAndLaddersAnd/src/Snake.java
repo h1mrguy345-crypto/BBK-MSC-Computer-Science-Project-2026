@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Snake {
     private static int snakeTop;
-    private int snakeBottom;
+    private static int snakeBottom;
 
     /**
      * constructor.
@@ -24,7 +24,7 @@ public class Snake {
     public static int getSnakeTop(){
         return snakeTop;
     }
-    public int getSnakeBottom() {
+    public static int getSnakeBottom() {
         return snakeBottom;
     }
 }

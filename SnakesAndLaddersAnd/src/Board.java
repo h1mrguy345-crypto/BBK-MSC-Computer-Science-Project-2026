@@ -19,9 +19,11 @@ public class Board {
     //12/06/2026: boardladder only recognises getladderbottom, not getladdertop. Ladder recognises it however
     public void printLadderonBoard(Ladder ladder){
         spot[Ladder.getLadderTop()].setLadder(ladder);
+        spot[Ladder.getLadderBottom()].setLadder(ladder); //made static
     }
     public void printSnakeonBoard(Snake snake){
         spot[Snake.getSnakeTop()].setSnake(snake);
+        spot[Snake.getSnakeBottom()].setSnake(snake); //made static
     }
 
     //prints the board out (check main).
