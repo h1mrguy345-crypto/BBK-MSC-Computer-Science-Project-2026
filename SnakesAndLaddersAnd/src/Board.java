@@ -32,15 +32,15 @@ public class Board {
         for (int i = 1; i <= boardSize; i++){
             if (spot[i].getLadder() != null){
                 //System.out.print("[L]");
-                System.out.printf("[%s]", "L");
+                System.out.printf("[%-3s]", "L");
             }
             if (spot[i].getSnake() != null){
                 //System.out.print("[S]");
-                System.out.printf("[%s]", "S");
+                System.out.printf("[%-3s]", "S");
             }
             else {
                 //System.out.print("[ ]");
-                System.out.printf("[%s]", " ");
+                System.out.printf("[%-3s]", "");
             }
             if (i % 10 == 0){
                 System.out.println();
