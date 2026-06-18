@@ -31,16 +31,17 @@ public class Board {
     public void printBoard(){
         for (int i = 1; i <= boardSize; i++){
             if (spot[i].getLadder() != null){
-                //System.out.print("[L]");
-                System.out.printf("[%-3s]", "L");
+                System.out.printf("[ L ]");
+                //System.out.printf("[%-3s]", "L");
             }
-            if (spot[i].getSnake() != null){
-                //System.out.print("[S]");
-                System.out.printf("[%-3s]", "S");
+            //Else if keeps the board rows fixed, if statement caused issues
+            else if (spot[i].getSnake() != null){
+                System.out.printf("[ S ]");
+                //System.out.printf("[%-3s]", "S");
             }
             else {
-                //System.out.print("[ ]");
-                System.out.printf("[%-3s]", "");
+                System.out.printf("[  ]");
+                //System.out.printf("[%-3s]", "");
             }
             if (i % 10 == 0){
                 System.out.println();
