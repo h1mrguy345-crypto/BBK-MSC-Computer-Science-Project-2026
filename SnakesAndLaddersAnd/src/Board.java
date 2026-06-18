@@ -31,13 +31,16 @@ public class Board {
     public void printBoard(){
         for (int i = 1; i <= boardSize; i++){
             if (spot[i].getLadder() != null){
-                System.out.print("[L]");
+                //System.out.print("[L]");
+                System.out.printf("[%s]", "L");
             }
             if (spot[i].getSnake() != null){
-                System.out.print("[S]");
+                //System.out.print("[S]");
+                System.out.printf("[%s]", "S");
             }
             else {
-                System.out.print("[ ]");
+                //System.out.print("[ ]");
+                System.out.printf("[%s]", " ");
             }
             if (i % 10 == 0){
                 System.out.println();
