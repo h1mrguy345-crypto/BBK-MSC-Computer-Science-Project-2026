@@ -1,6 +1,8 @@
+import java.security.PublicKey;
+
 public class Player {
     private String playerName;
-    private int payersCurrentPosition;
+    private int playersCurrentPosition;
 
     /**
      * constructor of player class
@@ -9,6 +11,17 @@ public class Player {
      */
     public Player(String playerName){
         this.playerName = playerName;
-        this.payersCurrentPosition = 1;
+        this.playersCurrentPosition = 1;
+    }
+
+    //setters and getters
+
+    public int getPlayersCurrentPosition(){
+        return playersCurrentPosition;
+    }
+
+    //tracks the current position, whereas constructor ensures player starts on the first tile
+    public void setPlayersCurrentPosition(int playersCurrentPosition){
+        this.playersCurrentPosition = playersCurrentPosition;
     }
 }
