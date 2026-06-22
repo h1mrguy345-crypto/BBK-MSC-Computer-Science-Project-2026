@@ -6,7 +6,7 @@ public class PlayerTest {
     //to ensure players begin on the first space of the board
     @Test
     void beginAtFirstSpot(){
-        Player testPlayer = new Player("player 1");
+        Player testPlayer = new Player("player 1", "P1");
         System.out.println("player 1 is on the first spot of the board");
         assertEquals(1,testPlayer.getPlayersCurrentPosition());
     }
@@ -18,7 +18,7 @@ public class PlayerTest {
      */
     @Test
     void playersCanMoveAndBeTracked(){
-        Player testPlayer = new Player("player 1");
+        Player testPlayer = new Player("player 1", "P1");
         testPlayer.setPlayersCurrentPosition(82);
         System.out.println("player 1 is currently at spot 82");
         assertEquals(82, testPlayer.getPlayersCurrentPosition());

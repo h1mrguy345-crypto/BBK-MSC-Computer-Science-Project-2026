@@ -2,6 +2,7 @@ import java.security.PublicKey;
 
 public class Player {
     private String playerName;
+    private String playerBoardRepresentation;
     private int playersCurrentPosition;
 
     /**
@@ -9,8 +10,9 @@ public class Player {
      * @param playerName defined the name of the current player
      * also tracks the position of the player, which will always start at spot 1
      */
-    public Player(String playerName){
+    public Player(String playerName, String playerBoardRepresentation){
         this.playerName = playerName;
+        this.playerBoardRepresentation = playerBoardRepresentation;
         this.playersCurrentPosition = 1;
     }
 
