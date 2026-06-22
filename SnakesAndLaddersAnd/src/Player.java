@@ -24,4 +24,8 @@ public class Player {
     public void setPlayersCurrentPosition(int playersCurrentPosition){
         this.playersCurrentPosition = playersCurrentPosition;
     }
+
+    public String getPlayerName(){
+        return playerName;
+    }
 }
