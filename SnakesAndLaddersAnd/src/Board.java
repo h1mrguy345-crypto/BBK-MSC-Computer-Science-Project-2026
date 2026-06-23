@@ -28,8 +28,16 @@ public class Board {
 
     //prints the board out (check main).
     // might be worth looking into: https://stackoverflow.com/questions/77395613/function-for-snakes-and-ladders-printing-additional-output-that-is-not-needed
-    public void printBoard(){
+    public void printBoard(Player p1, Player p2){
         for (int i = 1; i <= boardSize; i++){
+            //prints out player 1 on board
+            if (p1.getPlayersCurrentPosition() == i){
+                System.out.print("[P1]");
+            }
+            //prints out player 2 on board
+            else if (p2.getPlayersCurrentPosition() == i) {
+                System.out.print("[P2]");
+            }
             if (spot[i].getLadder() != null){
                 System.out.printf("[ L ]");
                 //System.out.printf("[%-3s]", "L");
