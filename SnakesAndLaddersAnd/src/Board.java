@@ -2,6 +2,7 @@ public class Board {
     private int boardSize;
     private Spot[] spot;
 
+
     //constructor for the board
     public Board (int boardSize){
         this.boardSize = boardSize;
@@ -37,6 +38,10 @@ public class Board {
             //prints out player 2 on board
             else if (p2.getPlayersCurrentPosition() == i) {
                 System.out.print("[P2]");
+            }
+            //for when both players are on the same spot
+            else if (p1.getPlayersCurrentPosition() == i && p2.getPlayersCurrentPosition() == i){
+                System.out.print("[ P1/P2 ]");
             }
             if (spot[i].getLadder() != null){
                 System.out.printf("[ L ]");

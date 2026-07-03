@@ -26,6 +26,6 @@ public class Main{
         mainBoard.printSnakeonBoard(new Snake(10,50));
         mainBoard.printSnakeonBoard(new Snake(31,48));
         mainBoard.printSnakeonBoard(new Snake(16,90));
-        mainBoard.printBoard(new Player("Player 1", "P1"), new Player("Player 2", "P1"));
+        mainBoard.printBoard(new Player("Player 1", "P1"), new Player("Player 2", "P2"));
     }
 }
