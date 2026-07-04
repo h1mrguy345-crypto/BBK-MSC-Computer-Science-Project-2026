@@ -31,19 +31,19 @@ public class Board {
     // might be worth looking into: https://stackoverflow.com/questions/77395613/function-for-snakes-and-ladders-printing-additional-output-that-is-not-needed
     public void printBoard(Player p1, Player p2){
         for (int i = 1; i <= boardSize; i++){
+            //for when both players are on the same spot
+            if (p1.getPlayersCurrentPosition() == i && p2.getPlayersCurrentPosition() == i){
+                System.out.print("[ P1/P2 ]");
+            }
             //prints out player 1 on board
-            if (p1.getPlayersCurrentPosition() == i){
+             else if (p1.getPlayersCurrentPosition() == i){
                 System.out.print("[P1]");
             }
             //prints out player 2 on board
             else if (p2.getPlayersCurrentPosition() == i) {
                 System.out.print("[P2]");
             }
-            //for when both players are on the same spot
-            else if (p1.getPlayersCurrentPosition() == i && p2.getPlayersCurrentPosition() == i){
-                System.out.print("[ P1/P2 ]");
-            }
-            if (spot[i].getLadder() != null){
+            else if (spot[i].getLadder() != null){
                 System.out.printf("[ L ]");
                 //System.out.printf("[%-3s]", "L");
             }
