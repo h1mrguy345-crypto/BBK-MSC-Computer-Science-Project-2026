@@ -1,3 +1,9 @@
 public class Dice {
-    //dice class
+
+    public Dice(){
+
+    }
+    public int DiceRoll(){
+        
+    }
 }
