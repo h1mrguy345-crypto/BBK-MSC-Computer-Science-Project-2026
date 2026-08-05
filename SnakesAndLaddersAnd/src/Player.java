@@ -30,4 +30,9 @@ public class Player {
     public String getPlayerName(){
         return playerName;
     }
+
+    //allows a player to roll dice (rather than the main automatically doing it)
+    public int playersRoll(Dice playerDiceRoll){
+        return playerDiceRoll.DiceRoll();
+    }
 }
