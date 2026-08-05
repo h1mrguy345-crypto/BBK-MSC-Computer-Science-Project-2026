@@ -16,6 +16,7 @@ public class Main{
             System.out.println("the winner is the first one who reaches the top tile");
             System.out.println("to exit the instructions, hit enter (you will be sent to the next page)");
         }
+        Scanner playersInput = new Scanner(System.in);
         Board mainBoard = new Board(100);
         //17/06/26 both ladder and snake are null, to be uncommented once snakes and ladders are printed onto board
         mainBoard.printLadderonBoard(new Ladder(8,5));
@@ -30,6 +31,8 @@ public class Main{
         Player P1 = new Player("Player1", "P1");
         Player P2 = new Player("Player 2", "P2");
         Dice mainDice = new Dice();
+        System.out.println("hit enter to roll the dice");
+        playersInput.nextLine(); //rolls the dice
         int mainRoll = P1.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
         System.out.println("you have rolled " + mainRoll);
         P1.setPlayersCurrentPosition(P1.getPlayersCurrentPosition() + mainRoll);
