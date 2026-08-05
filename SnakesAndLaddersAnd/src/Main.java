@@ -27,8 +27,12 @@ public class Main{
         mainBoard.printSnakeonBoard(new Snake(31,48));
         mainBoard.printSnakeonBoard(new Snake(16,90));
         mainBoard.printBoard(new Player("Player 1", "P1"), new Player("Player 2", "P2"));
+        Player P1 = new Player("Player1", "P1");
+        Player P2 = new Player("Player 2", "P2");
         Dice mainDice = new Dice();
         int mainRoll = mainDice.DiceRoll();
         System.out.println("you have rolled " + mainRoll);
+        P1.setPlayersCurrentPosition(P1.getPlayersCurrentPosition() + mainRoll);
+        mainBoard.printBoard(P1,P2);
     }
 }
