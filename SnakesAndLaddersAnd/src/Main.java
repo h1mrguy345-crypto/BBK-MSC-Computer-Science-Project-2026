@@ -30,7 +30,7 @@ public class Main{
         Player P1 = new Player("Player1", "P1");
         Player P2 = new Player("Player 2", "P2");
         Dice mainDice = new Dice();
-        int mainRoll = mainDice.DiceRoll();
+        int mainRoll = P1.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
         System.out.println("you have rolled " + mainRoll);
         P1.setPlayersCurrentPosition(P1.getPlayersCurrentPosition() + mainRoll);
         mainBoard.printBoard(P1,P2);
