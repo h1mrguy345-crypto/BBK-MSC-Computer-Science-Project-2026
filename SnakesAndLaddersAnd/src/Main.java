@@ -43,11 +43,15 @@ public class Main{
         Dice mainDice = new Dice();
 
         while (!endGame){
+            Player player = activePlayer[activeUser];
+            System.out.println("current turn: " + player.getPlayerName());
         System.out.println("hit enter to roll the dice");
         playersInput.nextLine(); //rolls the dice
         int mainRoll = P1.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
         System.out.println("you have rolled " + mainRoll);
         P1.setPlayersCurrentPosition(P1.getPlayersCurrentPosition() + mainRoll);
         mainBoard.printBoard(P1,P2);}
+        //uses the array to switch to next player
+        activeUser = (activeUser + 1) % activePlayer.length;
     }
 }
