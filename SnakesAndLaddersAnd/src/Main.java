@@ -28,8 +28,15 @@ public class Main{
         mainBoard.printSnakeonBoard(new Snake(31,48));
         mainBoard.printSnakeonBoard(new Snake(16,90));
         mainBoard.printBoard(new Player("Player 1", "P1"), new Player("Player 2", "P2"));
-        Player P1 = new Player("Player1", "P1");
-        Player P2 = new Player("Player 2", "P2");
+
+        /**
+         * allows the looping of players once a turn ends
+         * based on a method i made for the Programming in java 2025-2026 coursework
+         * */
+        Player[] humanPlayers = {
+        new Player("Player1", "P1"),
+        new Player("Player 2", "P2")};
+        int activeUser = 0;
         Dice mainDice = new Dice();
         System.out.println("hit enter to roll the dice");
         playersInput.nextLine(); //rolls the dice
