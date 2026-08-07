@@ -32,17 +32,22 @@ public class Main{
         /**
          * allows the looping of players once a turn ends
          * based on a method i made for the Programming in java 2025-2026 coursework
+         * main difference is that the array doesn't work when new players are defined within itself
+         * so players are set before the array
          * */
-        Player[] humanPlayers = {
-        new Player("Player1", "P1"),
-        new Player("Player 2", "P2")};
+        Player P1 = new Player("Player1", "P1");
+        Player P2 = new Player("Player 2", "P2");
+        Player activePlayer[] = {P1,P2};
         int activeUser = 0;
+        Boolean endGame = false;
         Dice mainDice = new Dice();
+
+        while (!endGame){
         System.out.println("hit enter to roll the dice");
         playersInput.nextLine(); //rolls the dice
         int mainRoll = P1.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
         System.out.println("you have rolled " + mainRoll);
         P1.setPlayersCurrentPosition(P1.getPlayersCurrentPosition() + mainRoll);
-        mainBoard.printBoard(P1,P2);
+        mainBoard.printBoard(P1,P2);}
     }
 }
