@@ -37,21 +37,25 @@ public class Main{
          * */
         Player P1 = new Player("Player1", "P1");
         Player P2 = new Player("Player 2", "P2");
-        Player activePlayer[] = {P1,P2};
-        int activeUser = 0;
+        Player[] activePlayer = {P1,P2};
+        //int activeUser = 0;
         Boolean endGame = false;
         Dice mainDice = new Dice();
 
-        while (!endGame){
-            Player player = activePlayer[activeUser];
-            System.out.println("current turn: " + player.getPlayerName());
-        System.out.println("hit enter to roll the dice");
-        playersInput.nextLine(); //rolls the dice
-        int mainRoll = player.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
-        System.out.println("you have rolled " + mainRoll);
-        player.setPlayersCurrentPosition(player.getPlayersCurrentPosition() + mainRoll);
-        mainBoard.printBoard(P1,P2);}
-        //uses the array to switch to next player
-        activeUser = (activeUser + 1) % activePlayer.length;
+        while (!endGame) {
+            //Player player = activePlayer[activeUser];
+            //endless for loop which allows the game to switch players
+            for (Player player : activePlayer) {
+                System.out.println("current turn: " + player.getPlayerName());
+                System.out.println("hit enter to roll the dice");
+                playersInput.nextLine(); //rolls the dice
+                int mainRoll = player.playersRoll(mainDice); //to prevent automatic rolling, setting dice roll to players input (still automatically rolls as of right now)
+                System.out.println("you have rolled " + mainRoll);
+                player.setPlayersCurrentPosition(player.getPlayersCurrentPosition() + mainRoll);
+                mainBoard.printBoard(P1, P2);
+            }
+            //uses the array to switch to next player
+            // activeUser = (activeUser+1) % activePlayer.length;
+        }
     }
 }
