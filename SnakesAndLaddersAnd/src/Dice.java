@@ -4,7 +4,6 @@ public class Dice {
 private Random dice;
 
     public Dice(){
-
         dice = new Random();
     }
 /**
